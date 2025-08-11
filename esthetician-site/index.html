@@ -3,53 +3,66 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Glow & Go Esthetics</title>
-  <link rel="stylesheet" href="styles.css"/>
+  <title>Glow & Go - Esthetician Services</title>
+  <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
+
   <header>
-    <h1>Glow & Go Esthetics</h1>
-    <p>Your go-to spot for lashes, brows, and glowing skin.</p>
+    <h1>Glow & Go</h1>
+    <p>Your beauty, our passion ✨</p>
   </header>
 
-  <section id="services">
-    <h2>Services</h2>
-    <div class="service-grid">
-      <div class="service-card" data-service="Lash Lifts & Tints">Lash Lifts & Tints</div>
-      <div class="service-card" data-service="Brow Lamination, Tint & Wax">Brow Lamination, Tint & Wax</div>
-      <div class="service-card" data-service="Chin Wax">Chin Wax</div>
-      <div class="service-card" data-service="Lip Wax">Lip Wax</div>
-      <div class="service-card" data-service="Facials">Facials</div>
-      <div class="service-card" data-service="Derma Planing">Derma Planing</div>
-      <div class="service-card" data-service="Chemical Peel">Chemical Peel</div>
+  <section class="services">
+    <h2>Our Services</h2>
+    <div class="service-list">
+      <div class="service">Lash lifts & tints</div>
+      <div class="service">Brow lamination, tint & wax</div>
+      <div class="service">Chin wax, lip wax</div>
+      <div class="service">Facials</div>
+      <div class="service">Derma Planing</div>
+      <div class="service">Chemical Peel</div>
     </div>
+    <button id="bookNow">Book a Service</button>
   </section>
 
-  <section id="booking">
+  <section class="form-section" id="bookingFormSection">
     <h2>Book Your Appointment</h2>
-    <form id="bookingForm" action="https://formspree.io/f/your-form-id" method="POST">
-      <label>Name:<input type="text" name="name" required></label>
-      <label>Email:<input type="email" name="email" required></label>
-      <label>Service:
+    <form id="bookingForm" action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+      <label>
+        Name:
+        <input type="text" name="name" required />
+      </label>
+      <label>
+        Email:
+        <input type="email" name="email" required />
+      </label>
+      <label>
+        Service:
         <select name="service" required>
-          <option value="">-- Select a Service --</option>
-          <option>Lash Lifts & Tints</option>
-          <option>Brow Lamination, Tint & Wax</option>
-          <option>Chin Wax</option>
-          <option>Lip Wax</option>
+          <option value="">Select a service</option>
+          <option>Lash lifts & tints</option>
+          <option>Brow lamination, tint & wax</option>
+          <option>Chin wax, lip wax</option>
           <option>Facials</option>
           <option>Derma Planing</option>
           <option>Chemical Peel</option>
         </select>
       </label>
-      <label>Preferred Date:<input type="date" name="date" required></label>
-      <label>Message (optional):<textarea name="message"></textarea></label>
+      <label>
+        Preferred Date:
+        <input type="date" name="date" required />
+      </label>
+      <label>
+        Notes:
+        <textarea name="notes" placeholder="Anything else we should know?"></textarea>
+      </label>
       <button type="submit">Submit</button>
     </form>
   </section>
 
   <footer>
-    <p>© 2025 Glow & Go Esthetics - All Rights Reserved</p>
+    <p>© 2025 Glow & Go | Designed with ❤️</p>
   </footer>
 
   <script src="script.js"></script>
