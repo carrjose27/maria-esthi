@@ -1,16 +1,10 @@
-// Open & close modal
-const modal = document.getElementById("formModal");
-const btn = document.getElementById("bookBtn");
-const span = document.getElementsByClassName("close")[0];
-
-btn.onclick = function() {
-  modal.style.display = "block";
-}
-span.onclick = function() {
-  modal.style.display = "none";
-}
-window.onclick = function(event) {
-  if (event.target == modal) {
-    modal.style.display = "none";
-  }
-}
+document.querySelectorAll('.service-card').forEach(card => {
+  card.addEventListener('click', () => {
+    const service = card.dataset.service;
+    document.querySelector('select[name="service"]').value = service;
+    window.scrollTo({
+      top: document.getElementById('booking').offsetTop,
+      behavior: 'smooth'
+    });
+  });
+});
