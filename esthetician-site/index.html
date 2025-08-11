@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Glow Studio - Esthetician Services</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Hero Section -->
+    <header class="hero">
+        <h1>Glow Studio</h1>
+        <p>Your glow, our passion — specialized beauty treatments</p>
+        <button id="bookBtn">Book Now</button>
+    </header>
+
+    <!-- Services -->
+    <section class="services">
+        <h2>Our Services</h2>
+        <div class="service-grid">
+            <div class="service-card">
+                <h3>Lash Lifts & Tints</h3>
+                <p>Enhance your lashes with a natural lift & rich tint.</p>
+            </div>
+            <div class="service-card">
+                <h3>Brow Lamination, Tint & Wax</h3>
+                <p>Perfectly shaped, fuller, and defined brows.</p>
+            </div>
+            <div class="service-card">
+                <h3>Chin & Lip Wax</h3>
+                <p>Smooth and soft skin with precision waxing.</p>
+            </div>
+            <div class="service-card">
+                <h3>Facials</h3>
+                <p>Customized facial treatments for glowing skin.</p>
+            </div>
+            <div class="service-card">
+                <h3>Dermaplaning</h3>
+                <p>Exfoliation for brighter, smoother skin.</p>
+            </div>
+            <div class="service-card">
+                <h3>Chemical Peel</h3>
+                <p>Rejuvenate and refresh with professional peels.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Booking Form Modal -->
+    <div id="formModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Book Your Appointment</h2>
+            <form action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+                <label>Name:</label>
+                <input type="text" name="name" required>
+
+                <label>Email:</label>
+                <input type="email" name="email" required>
+
+                <label>Service:</label>
+                <select name="service" required>
+                    <option value="">Select a service</option>
+                    <option>Lash Lift & Tint</option>
+                    <option>Brow Lamination, Tint & Wax</option>
+                    <option>Chin Wax</option>
+                    <option>Lip Wax</option>
+                    <option>Facial</option>
+                    <option>Dermaplaning</option>
+                    <option>Chemical Peel</option>
+                </select>
+
+                <label>Preferred Date:</label>
+                <input type="date" name="date" required>
+
+                <label>Additional Notes:</label>
+                <textarea name="notes"></textarea>
+
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+    </div>
+
+    <footer>
+        <p>© 2025 Glow Studio | Designed with 💖</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
