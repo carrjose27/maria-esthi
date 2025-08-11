@@ -1,4 +1,3 @@
-// Modal logic
 const modal = document.getElementById("bookingModal");
 const btn = document.getElementById("bookNowBtn");
 const closeBtn = document.getElementsByClassName("close")[0];
@@ -16,11 +15,3 @@ window.onclick = function(event) {
     modal.style.display = "none";
   }
 }
-
-// Handle form submission
-document.getElementById("bookingForm").addEventListener("submit", function(e) {
-  e.preventDefault();
-  alert("Thank you! Your booking request has been submitted.");
-  modal.style.display = "none";
-  this.reset();
-});
